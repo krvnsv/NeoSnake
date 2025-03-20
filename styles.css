@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Header styling for full-width Matrix text */
+#gameHeader {
+    width: 100%;
+    color: lime;
+    font-family: "Courier New", monospace;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Bold NeoSnake */
+.highlight {
+    font-weight: bold;
+}
+
+
+/* Center the game container vertically and horizontally, accounting for header */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Flex container for all components */
+#gameContainer {
+    display: flex;
+    align-items: center; /* Vertically center all children */
+    justify-content: center; /* Center the group horizontally */
+    width: 90%; /* Spacing control */
+    max-width: 1400px;
+    gap: 20px; /* Space between components */
+    margin-top: 60px; /* Offset to account for header height */
+}
+
+/* Leaderboard styling */
+#leaderboardContainer {
+    width: 350px;
+    color: lime;
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    margin-right: auto; /* Push it left */
+}
+
+#leaderboardTitle {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid lime;
+    padding-bottom: 5px;
+}
+
+#leaderboard {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#leaderboard th, #leaderboard td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+#leaderboard th {
+    background-color: #111;
+    text-transform: uppercase;
+}
+
+#leaderboard .player-row {
+    background-color: rgba(0, 255, 0, 0.2);
+    font-weight: bold;
+}
+
+/* Game area styling */
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center canvas horizontally */
+}
+
+/* Canvas styling */
+canvas {
+    background: #111;
+}
+
+/* Score display below canvas */
+#scoreDisplay {
+    color: lime;
+    font-family: "Courier New", monospace;
+    font-size: 24px;
+    text-align: center;
+    width: 600px;
+    padding: 10px;
+    margin-top: 20px; /* Space between canvas and score */
+}
+
+/* Buttons container styling */
+#buttonsContainer {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+    margin-left: auto; /* Push it right */
+}
+
+.gameButton {
+    width: 70%;
+    padding: 10px 20px;
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    color: lime;
+    background-color: #111;
+    border: 1px solid lime;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.gameButton:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}

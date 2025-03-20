@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neo Snake</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="gameHeader">
+        Wake up <span class="highlight">NeoSnake</span>... The Matrix has you...
+    </header>
+    <div id="gameContainer">
+        <div id="leaderboardContainer">
+            <div id="leaderboardTitle">Leaderboard</div>
+            <table id="leaderboard">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboardBody">
+                    <!-- Leaderboard rows -->
+                </tbody>
+            </table>
+        </div>
+        <div id="gameArea">
+            <canvas id="gameCanvas" width="600" height="600"></canvas>
+            <div id="scoreDisplay">
+                <span id="currentScore">Score: 0</span> | <span id="topScore">Top Score: 0</span>
+            </div>
+        </div>
+        <div id="buttonsContainer">
+            <button class="gameButton" id="restartButton">Restart</button>
+            <button class="gameButton" id="resetScoreButton">Reset Game</button>
+            <br><br/>
+            <button class="gameButton" id="bluePillButton">Blue Pill</button>
+            <button class="gameButton" id="redPillButton">Red Pill</button>
+            <br><br/>
+            <button class="gameButton" id="diff1Button">Difficulty 1</button>
+            <button class="gameButton" id="diff2Button">Difficulty 2</button>
+            <button class="gameButton" id="diff3Button">Difficulty 3</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
